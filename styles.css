@@ -1,8 +1,16 @@
+
+* {
+    box-sizing: border-box;
+}
+
 /* ======================================================================================================================================
                                                      Web Fonts
 ====================================================================================================================================== */
-
-
+/* 
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url(../techdegree-project-3/static/Oswald-Regular.ttf);
+} */
 
 
 
@@ -12,6 +20,98 @@
 ====================================================================================================================================== */
 
 
+body {
+    background: #fff;
+    color: rgb(40, 40, 48);
+}
+
+header {
+    background: rgb(40, 40, 48);
+    color: #fff;
+}
+
+.signup {
+    text-align: center;
+    border-bottom: solid 4px rgb(40, 40, 48);
+    margin-top: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex: 1;
+    align-items: center;
+    margin: 3px auto;
+    padding: 20px 20px;
+    border-top: solid 2px rgb(40, 40, 48);
+}
+
+fieldset {
+    /* display: flex;
+    flex: 1;
+    flex-direction: column; */
+    position: relative;
+    margin:5px auto 25px ;
+    border: none;
+}
+
+legend {
+    margin-bottom: 10px;
+    color: rgb(27, 27, 39);
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    display: flex;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    /* height: auto; */
+    /* margin: 5px 0; */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+label[for^="news"] {
+    display: inline-block;
+    padding-left: 6px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    padding: 15px 30px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+button {
+    display: flex;
+    padding: 15px 55px;
+    font-weight: bolder;
+    font-size: 1em;
+    color: #fff;
+    border: solid 2px rgb(35, 129, 136);
+    border-radius: 4px;
+    background-color: rgb(35, 129, 136);
+    cursor: pointer;
+}
 
 /* ======================================================================================================================================
                                                      Base Element Styles
@@ -46,9 +146,74 @@
 
 /* ----------------------------------------------------- Layout Containers ---------------------------------------------------------------- */
 
+header,
+footer {
+    align-items: center;
+    margin: 5px auto;
+}
+
+
+/* ======================================================================================================================================
+                                                     Flexbox
+====================================================================================================================================== */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: stretch;
+    
+}
+
+
 
 
 
 /* ========================================================================================================================================
                                                       Media Queries 
 ======================================================================================================================================== */
+
+@media(min-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
