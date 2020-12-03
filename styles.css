@@ -23,50 +23,47 @@
 body {
     background: #fff;
     color: rgb(40, 40, 48);
+    margin: 0;
 }
 
 header {
+    display: flex;
+    justify-content: center;
     background: rgb(40, 40, 48);
     color: #fff;
+    margin-top: auto;
 }
 
 .signup {
+    max-width: 450px;
     text-align: center;
     border-bottom: solid 4px rgb(40, 40, 48);
-    margin-top: 0px;
+    margin: 0 auto;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    flex: 1;
-    align-items: center;
+    max-width: 450px;
     margin: 3px auto;
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-top: solid 2px rgb(40, 40, 48);
 }
 
 fieldset {
-    /* display: flex;
-    flex: 1;
-    flex-direction: column; */
-    position: relative;
-    margin:5px auto 25px ;
+    display: block;
+    margin: 0 auto 25px;
     border: none;
 }
 
 legend {
-    margin-bottom: 10px;
+    margin-bottom: 0;
     color: rgb(27, 27, 39);
     font-weight: bold;
     font-size: 1.15em;
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
+    display: block;
+    margin: 10px 0 4px;
     font-size: 0.9em;
 }
 
@@ -75,11 +72,12 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-    display: flex;
+    width: 100%;
     background-color: rgb(218, 218, 218);
     border: none;
-    /* height: auto; */
-    /* margin: 5px 0; */
+    height: auto;
+    margin: 0;
+    outline: 0;
     padding: 10px;
     border-radius: 4px;
 }
@@ -98,11 +96,15 @@ textarea {
     display: block;
     width: 100%;
     height: 90%;
+    resize: none;
     overflow: auto;
 }
 
 button {
     display: flex;
+    justify-content: center;
+    
+    margin: auto;
     padding: 15px 55px;
     font-weight: bolder;
     font-size: 1em;
