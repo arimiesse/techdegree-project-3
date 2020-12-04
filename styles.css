@@ -71,6 +71,10 @@ label {
     font-size: 0.9em;
 }
 
+#zip {
+    width: 50%;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -237,14 +241,30 @@ footer {
 
 @media(min-width: 768px) {
 
+    main {
+        width: 50%;
+        margin: auto;
+    }
 
+    label {
+        display: block;
+        margin: auto 0;
+    }
 
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        
+    }
 
-
-
-
-
-
+    .maininput {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex: 1;
+    }
 
 
 
