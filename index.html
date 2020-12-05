@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css2?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oswald">
     <title>Online Registration Form</title>
 </head>
 <body>
@@ -24,6 +25,7 @@
 
         <legend>Contact Information</legend>
 
+        <div class="maincon">
         <div class="maininput"><label for="name">Full Name</label>
         <input type="text" id="name" name="user_name" required="required" placeholder="Required"></div>
 
@@ -33,11 +35,11 @@
         <div class="maininput"><label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="user_phone"></div>
 
-        <div class="maininput"><label for="address" placeholder="123 Example Ave">Street Address</label>
-        <input type="text" id="address" name="user_address"></div>
+        <div class="maininput"><label for="address">Street Address</label>
+        <input type="text" id="address" name="user_address" placeholder="123 Example Ave"></div>
 
         <div class="maininput"><label for="city">City</label>
-        <input type="text" id="city" name="user_city"></div>
+        <input type="text" id="city" name="user_city"  placeholder="City"></div>
 
         <div class="maininput"><label for="state">State</label>
         <select id="state" name="user_state">
@@ -95,8 +97,9 @@
         </select></div>
 
         <div class="maininput"><label for="zip">Zip Code</label>
-        <input type="text" id="zip" name="user_zip"></div>
+        <input type="text" id="zip" name="user_zip" placeholder="Zip"></div>
 
+        </div>
         </fieldset>
 
         <fieldset>

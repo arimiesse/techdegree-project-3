@@ -3,27 +3,23 @@
     box-sizing: border-box;
 }
 
-/* ======================================================================================================================================
-                                                     Web Fonts
-====================================================================================================================================== */
-/* 
-@font-face {
-    font-family: 'Oswald', sans-serif;
-    src: url(../techdegree-project-3/static/Oswald-Regular.ttf);
-} */
-
-
-
 
 /* ======================================================================================================================================
-                                                     D.R.Y. CSS
+                                                     Main CSS
 ====================================================================================================================================== */
 
 
 body {
-    background: #fff;
+    background: rgb(255, 255, 255);
     color: rgb(40, 40, 48);
     margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    background: rgb(241, 241, 241);
+    border-radius: 20px;
+    box-shadow: -15px 30px 40px rgba(0,0,0,0.3);
 }
 
 header {
@@ -43,6 +39,15 @@ header {
     text-align: center;
     border-bottom: solid 2px rgb(40, 40, 48);
     margin: 0 auto;
+    padding-top: 25px;
+}
+
+.signup h2 {
+    margin-top: 0;
+}
+
+.signup p {
+    padding-bottom: 25px;
 }
 
 form {
@@ -69,6 +74,7 @@ label {
     width: 100%;
     margin: 12px 0 4px;
     font-size: 0.9em;
+    padding-bottom: 5px;
 }
 
 #zip {
@@ -88,6 +94,7 @@ select {
     outline: 0;
     padding: 10px;
     border-radius: 4px;
+    box-shadow: 1px 3px 2px rgba(114, 114, 114, 0.3) inset;
 }
 
 .cbox {
@@ -113,16 +120,15 @@ input[type="checkbox"] {
 textarea {
     display: block;
     width: 100%;
-    height: 90%;
+    height: 70px;
     resize: none;
     overflow: auto;
 }
 
 button {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
+    display: block;
     margin: auto;
+    width: 95%;
     padding: 15px 55px;
     font-weight: bolder;
     font-size: 1em;
@@ -131,12 +137,14 @@ button {
     border-radius: 4px;
     background-color: rgb(35, 129, 136);
     cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2) inset;
 }
 
 .copyright {
     font-style: italic;
     font-size: 14px;
     margin: 10px auto 40px;
+    padding-bottom: 20px;
 }
 
 /* ======================================================================================================================================
@@ -145,7 +153,7 @@ button {
 
 h1 {
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 12px;
     text-align: center;
     font-size: 22px;
 }
@@ -160,12 +168,6 @@ p {
     margin: 10px auto;
     padding-bottom: 10px;
 }
-
-
-
-/* ----------------------------------------------------- Pseudo-elements ---------------------------------------------------------------- */
-
-
 
 
 /* ----------------------------------------------------- Pseudo-classes ---------------------------------------------------------------- */
@@ -190,7 +192,7 @@ select:hover {
 
 button:hover {
     background-color:  rgba(35, 129, 136, 0.788);
-    border: double 2px rgb(35, 129, 136);
+    border: solid 2px rgb(35, 129, 136);
 }
 
 button:active {
@@ -208,8 +210,6 @@ option:disabled {
 ====================================================================================================================================== */
 
 
-
-/* ----------------------------------------------------- Layout Containers ---------------------------------------------------------------- */
 
 header,
 footer {
@@ -232,9 +232,6 @@ footer {
 }
 
 
-
-
-
 /* ========================================================================================================================================
                                                       Media Queries 
 ======================================================================================================================================== */
@@ -246,24 +243,36 @@ footer {
         margin: auto;
     }
 
-    label {
-        display: block;
+    .maininput label {
         margin: auto 0;
+        width: 23%;
     }
-
+    
     input[type="text"],
     input[type="email"],
     input[type="tel"],
     textarea,
     select {
-        
+        width: stretch;
+    }
+
+    .maincon {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: left;
     }
 
     .maininput {
         display: flex;
         flex-direction: row;
-        justify-content: left;
-        flex: 1;
+        margin: 5px 0;
+    }
+
+    #zip {
+        width: 33%;
+
+
     }
 
 
