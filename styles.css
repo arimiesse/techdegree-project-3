@@ -4,148 +4,7 @@
 }
 
 
-/* ======================================================================================================================================
-                                                     Main CSS
-====================================================================================================================================== */
 
-
-body {
-    background: rgb(255, 255, 255);
-    color: rgb(40, 40, 48);
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-}
-
-main {
-    background: rgb(241, 241, 241);
-    border-radius: 20px;
-    box-shadow: -15px 30px 40px rgba(0,0,0,0.3);
-}
-
-header {
-    background: rgb(40, 40, 48);
-    color: #fff;
-    margin-top: 0;
-    height: 55px;
-}
-
-.hp {
-    border-bottom: solid 4px rgb(40, 40, 48);
-    margin-bottom: 3px;
-}
-
-.signup {
-    width: 95%;
-    text-align: center;
-    border-bottom: solid 2px rgb(40, 40, 48);
-    margin: 0 auto;
-    padding-top: 25px;
-}
-
-.signup h2 {
-    margin-top: 0;
-}
-
-.signup p {
-    padding-bottom: 25px;
-}
-
-form {
-    width: 95%;
-    margin: 3px auto;
-    padding: 10px 0;
-}
-
-fieldset {
-    display: block;
-    margin: 0 auto 20px;
-    border: none;
-}
-
-legend {
-    margin-bottom: 0;
-    color: rgb(27, 27, 39);
-    font-weight: bold;
-    font-size: 1.15em;
-}
-
-label {
-    display: block;
-    width: 100%;
-    margin: 12px 0 4px;
-    font-size: 0.9em;
-    padding-bottom: 5px;
-}
-
-#zip {
-    width: 50%;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-    width: 100%;
-    background-color: rgb(230, 230, 230);
-    border: solid 1px rgb(230, 230, 230);
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 1px 3px 2px rgba(114, 114, 114, 0.3) inset;
-}
-
-.cbox {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0;
-}
-
-
-label[for^="news"] {
-    display: inline-block;
-    padding-left: 6px;
-    margin: auto 0;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    padding: 10px 20px;
-    display: block;
-    margin: 0.5px 0;
-}
-
-textarea {
-    display: block;
-    width: 100%;
-    height: 70px;
-    resize: none;
-    overflow: auto;
-}
-
-button {
-    display: block;
-    margin: auto;
-    width: 95%;
-    padding: 15px 55px;
-    font-weight: bolder;
-    font-size: 1em;
-    color: #fff;
-    border: solid 2px rgb(35, 129, 136);
-    border-radius: 4px;
-    background-color: rgb(35, 129, 136);
-    cursor: pointer;
-    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2) inset;
-}
-
-.copyright {
-    font-style: italic;
-    font-size: 14px;
-    margin: 10px auto 40px;
-    padding-bottom: 20px;
-}
 
 /* ======================================================================================================================================
                                                      Base Element Styles
@@ -153,15 +12,17 @@ button {
 
 h1 {
     margin-top: 0;
-    padding-top: 12px;
+    padding-top: 15px;
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 h2,
 h3 {
     margin: 10px auto;
     font-size: 20px;
+    font-weight: 700;
 }
 
 p {
@@ -209,14 +70,154 @@ option:disabled {
                                                      Base Layout Styles
 ====================================================================================================================================== */
 
-
-
 header,
 footer {
     align-items: center;
     margin: 0 auto 5px;
 }
 
+/* ======================================================================================================================================
+                                                     Main CSS
+====================================================================================================================================== */
+
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(40, 40, 48);
+    margin: 0;
+    font-family: 'Gayathri', sans-serif;
+    letter-spacing: 0.65px;
+}
+
+main {
+    background: rgb(241, 241, 241);
+    border-radius: 20px;
+    box-shadow: -15px 30px 40px rgba(0,0,0,0.3);
+}
+
+header {
+    background: rgb(40, 40, 48);
+    color: #fff;
+    margin-top: 0;
+    height: 55px;
+}
+
+.hp {
+    border-bottom: solid 4px rgb(40, 40, 48);
+    margin-bottom: 3px;
+}
+
+.signup {
+    width: 90%;
+    text-align: center;
+    border-bottom: solid 2px rgb(40, 40, 48);
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.signup h2 {
+    margin-top: 0;
+}
+
+.signup p {
+    padding-bottom: 25px;
+}
+
+form {
+    width: 100%;
+    margin: 3px auto;
+    padding: 10px 10px;
+}
+
+fieldset {
+    display: block;
+    margin: 0 auto 20px;
+    border: none;
+}
+
+legend {
+    margin: 0;
+    color: rgb(27, 27, 39);
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin: 12px 0 0;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    
+}
+
+#zip {
+    max-width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    border: solid 1px rgb(230, 230, 230);
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 3px 2px rgba(114, 114, 114, 0.3) inset;
+}
+
+.cbox {
+    display: flex;
+    margin: 5px 0;
+}
+
+.cbox label {
+    flex-basis: 150px;
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.cbox input {
+    margin: 0;
+    flex-basis: 5px;
+}
+
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 70px;
+    resize: none;
+    overflow: auto;
+}
+
+
+button {
+    display: block;
+    margin: auto;
+    width: 95%;
+    padding: 15px 55px;
+    font-weight: bolder;
+    font-size: 1em;
+    color: #fff;
+    border: solid 2px rgb(35, 129, 136);
+    border-radius: 4px;
+    background-color: rgb(35, 129, 136);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2) inset;
+}
+
+.copyright {
+    font-style: italic;
+    font-size: 14px;
+    margin: 10px auto 40px;
+    padding-bottom: 20px;
+}
 
 /* ======================================================================================================================================
                                                      Flexbox
@@ -242,40 +243,36 @@ footer {
         width: 50%;
         margin: auto;
     }
-
-    .maininput label {
-        margin: auto 0;
-        width: 23%;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea,
-    select {
-        width: stretch;
-    }
-
-    .maincon {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: left;
+        
+    .signup {
+        width: 95%;
     }
 
     .maininput {
         display: flex;
-        flex-direction: row;
+        align-items: center;
         margin: 5px 0;
     }
 
-    #zip {
-        width: 33%;
-
-
+    .maininput label {
+        flex-basis: 20%;
+        margin: auto 0;
     }
 
+    .maininput input,
+    .maininput select {
+        margin: 0;
+        flex-basis: 80%;
+        flex-grow: 1;
+    }
 
+    #zip {
+        max-width: 25%;
+    }
+
+    button {
+        width: 97%;
+    }
 
 
 
