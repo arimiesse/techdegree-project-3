@@ -161,7 +161,6 @@ input[type="tel"],
 textarea,
 select {
     width: 100%;
-    background-color: rgb(230, 230, 230);
     border: solid 1px rgb(230, 230, 230);
     height: auto;
     margin: 0;
@@ -169,6 +168,14 @@ select {
     padding: 10px;
     border-radius: 4px;
     box-shadow: 1px 3px 2px rgba(114, 114, 114, 0.3) inset;
+}
+
+input,
+textarea,
+select {
+    background-color: rgb(230, 230, 230);
+    transition-property: background-color;
+    transition-duration: 1.3s;
 }
 
 .cbox {
